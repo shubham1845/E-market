@@ -1,0 +1,61 @@
+/*CSS Reset*/
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.cardHighlight {
+  min-height: 100%;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+.cardHighlight a:hover {
+  color: #007bff; /* or any color you prefer */
+  text-decoration: underline;
+}
+
+/* /Navbar styling// start */
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff !important;
+}
+
+.nav-link {
+  margin-right: 1rem;
+  color: #495057 !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* /Navbar styling end// */
+
+/* modal */
+
+/* modal */
