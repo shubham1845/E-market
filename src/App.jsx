@@ -20,6 +20,7 @@ import Profile from "./pages/Profile";
 import RequestPasswordReset from "./components/ReqPasswordReset";
 import ResetPassword from "./components/ResetPassword";
 import ReqPasswordReset from "./components/ReqPasswordReset";
+import ConfirmEmail from "./components/ConfirmEmail";
 
 function App() {
   const [user, setUser] = useState({
@@ -104,6 +105,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/register" element={<Register />} />
+              <Route
+                path="/users/confirm-email/:token"
+                element={<ConfirmEmail />}
+              />
               <Route path="/login" element={<Login />} />
               <Route path="/products" element={<Products />} />
               <Route path="/products/:productId" element={<ViewProduct />} />
